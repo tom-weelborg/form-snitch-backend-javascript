@@ -8,6 +8,11 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
+app.post('/', (req, res) => {
+    const data = req.body;
+    console.log(data);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
